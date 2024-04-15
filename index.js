@@ -1,5 +1,7 @@
+require('dotenv').config();
 const express = require("express");
 const connection = require("./config");
+
 
 const app = express();
 const port = 5901; // You can change this to any port you prefer

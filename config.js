@@ -1,10 +1,10 @@
 const mysql = require('mysql2')
 
 const connection = mysql.createConnection({
-    user: "admin",
-    password: "31eiaMO6uTQL1Y2dzArg",
-    host: "database-test.c9wa6o2iew4l.us-east-1.rds.amazonaws.com",
-    database: "users"
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
 })
 
 connection.connect(err => {
